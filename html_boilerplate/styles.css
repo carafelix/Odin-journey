@@ -45,7 +45,13 @@ Next example only selects B and C, NOT A NOR D.
   comma let us add multiple veets
 
   */
+  
+	* { border: 2px solid red;}
 
+  body {
+          width: fit-content;
+          margin: 0 auto;
+  }
 
   p {
     color: rgba(15, 93, 114, 0.496);
@@ -66,4 +72,10 @@ Next example only selects B and C, NOT A NOR D.
   img.skateboard {
                     height: auto; width: 300px; /* won't lose proportion, always include something relating, so it wont
                     mess up if it takes longer to load, reserve space */    
+  }
+
+  html {
+
+    box-sizing: border-box;              /*perillas*/
+
   }
