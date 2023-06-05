@@ -1,1 +1,35 @@
 https://www.w3schools.com/css/css_pseudo_classes.asp
+
+flex-basis: es como el threshold en que se define grow pa aca shrink pa aca.
+parent flex-warp:warp;
+gap:1 rem.
+display: min-content (palabra más larga allow wrap) max-content (todo entero single line)
+flex-direction: row; column;
+justify-content: center; flex-start; flex-end; space-between; space-around; space-evenly;
+min-height>height
+align-items: (default) stretch; flex-start; flex-end; flex-center;
+
+justify es entre childs, si la orientación es row, justify separa todas las columanas, align content si es q tiene height las sube pa arriba o abajo del espacio disponible de parent.
+si la orientación es column, justify separa las row, align content los mueve dentro del row de izq a derecha
+align sirve para cada item individualmente. pero con align-self;
+Another detail to notice: when we changed the flex-direction to column, flex-basis refers to height instead of width
+
+" the default behavior is flex-direction: row which arranges things horizontally. The reason this often works well without changing other details in the CSS is because block-level elements default to the full width of their parent. Changing things to vertical using flex-direction: column adds complexity because block-level elements default to the height of their content, and in this case there is no content."
+
+border-radius
+
+should commit at the start of a proyect, to have a good commit history
+
+https://css-tricks.com/almanac/properties/s/scroll-snap-type/
+
+https://css-tricks.com/css-only-carousel/
+
+https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
+
+font-size: rem
+width: % in combination with a max-width, ch
+height: question urself "do i rly need to set height" if yes -> use a min-height
+padding/margin: rem or em, kevin often uses em for padding of buttons
+media queries: em
+
+px only for little things like shadows, borders etc.
