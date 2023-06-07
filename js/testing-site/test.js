@@ -99,23 +99,34 @@ if (begin === usrAdmin) {
 
   pwprompt = prompt("Password?")
 
-    if (pwpromt === usrPw) {
+    if ( pwprompt === usrPw) {
       alert("Welcome")
+    }
+    else if ( pwprompt == ('') ) {
+      alert ( "Please enter a Password" ) //how do I Loop effectivelly without f5 method? Im quite sure this could be resume quite a bit
+      location.reload();
+    }
+    else if ( pwprompt == (null) ) {
+      alert ( "Canceled")          
+    }
+
+    else if ( pwprompt == !usrPw) {
+      alert ( "Wrong Password")
     }
 
 }
 
-else if (begin == (null)) {
-    alert("Canceled");
+else if ( begin == (null) ) {
+    alert( "Canceled" );
 } 
 
-else if (begin == ('')) {
-  alert("Please enter a name");
+else if ( begin == ('') ) {
+  alert( "Please enter a name" );
     // setTimeout(function(){
       location.reload();
   // }, 1000);
 } 
 
-else if (begin != usrAdmin) {
-    alert("who are you?")
+else if ( begin != usrAdmin ) {
+    alert( "who are you?" )
 }
