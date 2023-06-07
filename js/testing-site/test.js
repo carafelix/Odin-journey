@@ -144,7 +144,7 @@ if (userName === 'Admin') {
 
   if (pass === 'TheMaster') {
     alert( 'Welcome!' );
-  } else if (pass === '' || pass === null) {  //the way
+  } else if (pass === '' || pass === null) {  //the way. shown: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals "common mistake"
     alert( 'Canceled' );
   } else {
     alert( 'Wrong password' );
