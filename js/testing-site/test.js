@@ -133,7 +133,8 @@ else if ( begin != usrAdmin ) {
     alert( "who are you?" )
 }
 
-//add js.info solution
+//add js.info solution, I couldn't make the seconde else to work for me to avoid repeating else if 
+// analice ↓↓↓
 
 // let userName = prompt("Who's there?", '');
 
