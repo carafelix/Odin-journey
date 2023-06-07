@@ -96,12 +96,23 @@ let begin = prompt("Who's there?");
 let pwprompt;
 
 if (begin === usrAdmin) {
-  prompt("Password?")
+
+  pwprompt = prompt("Password?")
+
+    if (pwpromt === usrPw) {
+      alert("Welcome")
+    }
+
 }
-  else if (begin == ("" || null)) {
+
+else if (begin == (null)) {
     alert("Canceled");
 } 
 
-  else if (begin != usrAdmin) {
+else if (begin == ('')) {
+  alert("Canceled");
+} 
+
+else if (begin != usrAdmin) {
     alert("who are you?")
 }
