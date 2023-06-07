@@ -92,66 +92,66 @@
 // How do I Loop effectivelly without f5 method? Im quite sure this could be resume quite a bit
 
 
-const usrAdmin = "Admin";
-const usrPw = "TheMaster";
-let begin = prompt("Who's there?");
-let pwprompt;
+// const usrAdmin = "Admin";
+// const usrPw = "TheMaster";
+// let begin = prompt("Who's there?");
+// let pwprompt;
 
-if (begin === usrAdmin) {
+// if (begin === usrAdmin) {
 
-  pwprompt = prompt("Password?")
+//   pwprompt = prompt("Password?")
 
-    if ( pwprompt === usrPw) {
-      alert("Welcome")
-    }
-    else if ( pwprompt == ('') ) {
-      alert ( "Please enter a Password" ) 
-      location.reload();
-    }
-    else if ( pwprompt == (null) ) {
-      alert ( "Canceled")          
-    }
+//     if ( pwprompt === usrPw) {
+//       alert("Welcome")
+//     }
+//     else if ( pwprompt == ('') ) {
+//       alert ( "Please enter a Password" ) 
+//       location.reload();
+//     }
+//     else if ( pwprompt == (null) ) {
+//       alert ( "Canceled")          
+//     }
 
-    else if ( pwprompt == !usrPw) {
-      alert ( "Wrong Password")
-    }
+//     else if ( pwprompt == !usrPw) {
+//       alert ( "Wrong Password")
+//     }
 
-}
+// }
 
-else if ( begin == (null) ) {
-    alert( "Canceled" );
-} 
+// else if ( begin == (null) ) {
+//     alert( "Canceled" );
+// } 
 
-else if ( begin == ('') ) {
-  alert( "Please enter a name" );
-    // setTimeout(function(){
-      location.reload();
-  // }, 1000);
-} 
+// else if ( begin == ('') ) {
+//   alert( "Please enter a name" );
+//     // setTimeout(function(){
+//       location.reload();
+//   // }, 1000);
+// } 
 
-else if ( begin != usrAdmin ) {
-    alert( "who are you?" )
-}
+// else if ( begin != usrAdmin ) {
+//     alert( "who are you?" )
+// }
 
 //add js.info solution, I couldn't make the seconde else to work for me to avoid repeating else if 
 // analice ↓↓↓
 
-// let userName = prompt("Who's there?", '');
+let userName = prompt("Who's there?", '');
 
-// if (userName === 'Admin') {
+if (userName === 'Admin') {
 
-//   let pass = prompt('Password?', '');
+  let pass = prompt('Password?', '');
 
-//   if (pass === 'TheMaster') {
-//     alert( 'Welcome!' );
-//   } else if (pass === '' || pass === null) {
-//     alert( 'Canceled' );
-//   } else {
-//     alert( 'Wrong password' );
-//   }
+  if (pass === 'TheMaster') {
+    alert( 'Welcome!' );
+  } else if (pass === '' || pass === null) {  //the way
+    alert( 'Canceled' );
+  } else {
+    alert( 'Wrong password' );
+  }
 
-// } else if (userName === '' || userName === null) {
-//   alert( 'Canceled' );
-// } else {
-//   alert( "I don't know you" );
-// }
+} else if (userName === '' || userName === null) {
+  alert( 'Canceled' );
+} else {
+  alert( "I don't know you" );
+}
