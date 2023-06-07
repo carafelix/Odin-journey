@@ -47,3 +47,61 @@
 // let percentage = actual / max
 
 // console.log(percentage);
+
+// Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}, for example:
+
+// let name = "John";
+
+// // embed a variable
+// alert( `Hello, ${name}!` ); // Hello, John!
+
+// // embed an expression
+// alert( `the result is ${1 + 2}` ); // the result is 3
+
+
+// To replace case insensitive, use a regular expression with an /i flag (insensitive):
+// Example
+// let text = "Please visit Microsoft!";
+// let newText = text.replace(/MICROSOFT/i, "W3Schools");
+
+// To replace all matches, use a regular expression with a /g flag (global match):
+// Example
+// let text = "Please visit Microsoft and Microsoft!";
+// let newText = text.replace(/Microsoft/g, "W3Schools");
+// Regular expressions are written without quotes.
+
+// const a = "a";
+// const b = "b";
+// if (a < b) {
+//   // true
+//   console.log(`${a} is less than ${b}`);
+// } else if (a > b) {
+//   console.log(`${a} is greater than ${b}`);
+// } else {
+//   console.log(`${a} and ${b} are equal.`);
+// }
+
+// if (age >= 14 && age <= 90);
+
+// if (!(age >= 14 && age <= 90));          clever!
+
+// if (age < 14 || age > 90);
+
+// https://javascript.info/task/check-login
+
+
+const usrAdmin = "Admin";
+const usrPw = "TheMaster";
+let begin = prompt("Who's there?");
+let pwprompt;
+
+if (begin === usrAdmin) {
+  prompt("Password?")
+}
+  else if (begin == ("" || null)) {
+    alert("Canceled");
+} 
+
+  else if (begin != usrAdmin) {
+    alert("who are you?")
+}
