@@ -88,6 +88,8 @@
 // if (age < 14 || age > 90);
 
 // https://javascript.info/task/check-login
+// Im quite sure im missing a way to do something like ('' XOR null) and return the last truthly value. 
+// How do I Loop effectivelly without f5 method? Im quite sure this could be resume quite a bit
 
 
 const usrAdmin = "Admin";
@@ -103,7 +105,7 @@ if (begin === usrAdmin) {
       alert("Welcome")
     }
     else if ( pwprompt == ('') ) {
-      alert ( "Please enter a Password" ) //how do I Loop effectivelly without f5 method? Im quite sure this could be resume quite a bit
+      alert ( "Please enter a Password" ) 
       location.reload();
     }
     else if ( pwprompt == (null) ) {
