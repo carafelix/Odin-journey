@@ -110,7 +110,10 @@ else if (begin == (null)) {
 } 
 
 else if (begin == ('')) {
-  alert("Canceled");
+  alert("Please enter a name");
+    // setTimeout(function(){
+      location.reload();
+  // }, 1000);
 } 
 
 else if (begin != usrAdmin) {
