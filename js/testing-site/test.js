@@ -198,3 +198,17 @@ if (userName === 'Admin') {
 // let result = condition ? value1 : value2;
 // The condition is evaluated: if it’s truthy then value1 is returned, otherwise – value2.
 // let accessAllowed = (age > 18) ? true : false;
+// in that example true : false; represent lines of code that would be exectued
+// when age > 18 is true and when age > 18 is false
+
+//let age = prompt('age?', 18);
+
+// let message = (age < 3) ? 'Hi, baby!' :
+// (age < 18) ? 'Hello!' :
+// (age < 100) ? 'Greetings!' :
+// 'What an unusual age!';
+
+// alert( message );
+
+// basically ? = if, and : = else and if chained : = else if, and the last : = else
+// that code is easy to understand, but more importantly is how they are styling it for readibility, same goes for { } poss
