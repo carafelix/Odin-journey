@@ -195,7 +195,7 @@ if (userName === 'Admin') {
 //     break;
 // }
 
-// let result = condition ? value1 : value2;
+// let result = condition ? value1 : value2; just use it on this manner. no more no less.
 // The condition is evaluated: if it’s truthy then value1 is returned, otherwise – value2.
 // let accessAllowed = (age > 18) ? true : false;
 // in that example true : false; represent lines of code that would be exectued
