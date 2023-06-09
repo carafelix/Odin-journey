@@ -210,5 +210,5 @@ if (userName === 'Admin') {
 
 // alert( message );
 
-// basically ? = if, and : = else and if chained : = else if, and the last : = else
+// basically ? = if, and : = else, when chained just read like that. ? = if, : = else
 // that code is easy to understand, but more importantly is how they are styling it for readibility, same goes for { } poss
