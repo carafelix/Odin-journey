@@ -210,5 +210,5 @@ if (userName === 'Admin') {
 
 // alert( message );
 
-// basically ? = if, and : = else, when chained just read like that. ? = if, : = else. is just working like else if but read the other way around
+// basically ? = if, and : = else, when chained just read like that. ? = if, : = else. is just working like else if but read the other way around. last sentence before ; works like default on switch or just last check of the last ? :
 // that code is easy to understand, but more importantly is how they are styling it for readibility, same goes for { } poss
