@@ -163,3 +163,4 @@ if (userName === 'Admin') {
 // case null
 // code
 // break
+// switch defaults to: (x) === case ""of x""
