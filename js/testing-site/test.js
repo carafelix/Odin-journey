@@ -155,3 +155,11 @@ if (userName === 'Admin') {
 } else {
   alert( "I don't know you" );
 }
+
+
+// another way to group ==== '' and null, was using switch ex:
+// switch(pwprompt)
+// case ''
+// case null
+// code
+// break
