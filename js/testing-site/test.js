@@ -212,3 +212,13 @@ if (userName === 'Admin') {
 
 // basically ? = if, and : = else, when chained just read like that. ? = if, : = else. is just working like else if but read the other way around. last sentence before ; works like default on switch or just last check of the last ? :
 // that code is easy to understand, but more importantly is how they are styling it for readibility, same goes for { } poss
+
+// JSON.parse() > regular expression. quite sure it has something to do with string-objets. typeof veet gives string and typeof obj gives obj
+const veet = '{"result":true, "count":42}';
+const obj = JSON.parse(veet);
+
+console.log(obj.count);
+// Expected output: 42
+
+console.log(obj.result);
+// Expected output: true
