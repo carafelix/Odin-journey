@@ -1,5 +1,8 @@
 This repository contains all other projects relatable to TheOdinProyect
-links to them here from last to first:
+
+To-do: make cleaner readme files for all proyects
+
+links to them here from last to first: 
 
 https://github.com/carafelix/OdinLanding
 
