@@ -6,7 +6,29 @@ const refused = document.querySelector('.refused');
 admitted.textContent = 'Admit: ';
 refused.textContent = 'Refuse: ';
 
-// loop starts here
+for (let person of people) {
 
-// refused.textContent += ;
-// admitted.textContent += ;
+    if (person === 'Phil' || person === 'Lola') {
+
+        refused.textContent += `${person}, ` ;  
+        
+    } else {
+        
+        admitted.textContent += `${person}, ` ;
+    }
+}
+
+refused.textContent = replaceComma(refused.textContent); 
+admitted.textContent = replaceComma(admitted.textContent);
+
+
+
+function lastComma (str) {
+    return str.lastIndexOf(',');
+}
+
+function replaceComma (str) {
+    let trim = str.trimEnd();
+    trim = trim.slice(0, lastComma(str))
+    return trim + '.'
+}
