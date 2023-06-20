@@ -112,3 +112,9 @@ btn.addEventListener("click", () => {
     para.textContent = "Contact not found.";
   }
 });
+
+
+// continue stops the loop iteration there and goes trough the next iteration:
+// prime example: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code#skipping_iterations_with_continue
+
+// do... while execute the code atleast onces
