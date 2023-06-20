@@ -1,0 +1,33 @@
+.chakram {
+
+    background-color: hsl(350, 100%, 88%);
+    font-family: "Verdana", "DejaVu Sans", "sans-serif"; 
+}
+
+.pinga {
+
+    font-size: 24px;
+
+}
+
+#dosmil {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 255); font-size: 36px;
+
+}
+
+#cuatromil {
+
+    background-color: #90ee90;
+    font-weight: bold;
+
+}
+
+
+/* Since item 3 and 4 shared 24px we could have recicle that code. will commit the fix
+¡No need for calling both classes on item 2!, thats crucial for better understanding of classes and attributes.
+Since most of the time you would have a lot of code and distribute it into more classes to elements is 
+simpler and wont crump up the code too much and would keep the site responsive and better organized
+since classes are per structure basis.
+is explained really well in the 03-ex readme*/

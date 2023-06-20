@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  padding: 8px;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;  
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/*      ---------------------------------------------------------------------------        */
+
+
+body {
+flex-flow: column nowrap;
+display: flex;
+}
+
+.content {
+  /* min-height: 90vh; not to use but could be a handy. como no se me ocurrio hacer crecer esto si puse flex1 en todos los otros laos la csm uasjajja */
+  flex-grow: 1;       /*TONTORRON PRUEBA SI HAY ESPACIO HACER CRECER EL BUEN SER HUMANO. Quierete macho q pasa pa*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap:1rem;
+  margin: 1rem;
+}
+
+.header,
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:1rem;
+}
+
+.footer {
+  background-color: #eeeeee;
+
+}
+
+/*LAS COSAS CRECEN DESDE ADENTRO HACIA AFUERA. HAY Q HACER CRECER AL HIJO SI YA HAY
+ESPACIO AFUERA
+QUE NO SE LLENA DIOS MIO SANTO JESUCRISTO
+ESTUVE CUALQUIER RATO EVITANDO EL .CONTENT
+Y ERA COSA DE PONER EL GROW AHI Y ESO Q LO PROBE EN TODOS LADOS
+SOYYYYYYYY TONTIIIIIIIIISIMO JAJAJAJA q soy weon jajaaaaj porq eseeee webeo era el unico conteeeeeeeeeeeeent jajaja laaaaaa csm
+fue buen sapear discord, aunq vi eso, lei el chat q expplicaba eso*/
