@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+</head>
+<body>
+    <script>
+
+        // random.org api call attempt // Would do later when I get the hang of api calls
+
+        const url = "https://api.random.org/json-rpc/4/invoke"
+
+        const randomApiCall = {
+                "jsonrpc": "2.0",
+                "method": "generateIntegers",
+                "params": {
+                    "apiKey": "aa28fec6-cdad-47f8-b471-cc8ee106298f",
+                    "n": 1,
+                    "min": 1,
+                    "max": 3,
+                    "replacement": true,
+                    "base": 10,
+                    "pregeneratedRandomization": null
+                },
+                "id": 24070
+            }
+
+        // fetch(url, randomApiCall)
+
+
+
+
+        // crypto pseudo-random. this implemntation has the problem that if CpuArray 1&2 are =, and >3, there is no way to resolute between 1 or 2. could be solve somewhat with https://stackoverflow.com/questions/4020796/finding-the-max-value-of-an-attribute-in-an-array-of-objects
+
+        const cpuArray = new Uint8Array(3);
+        
+        function getCpuRandomChoice() {
+            self.crypto.getRandomValues(cpuArray);
+            if (cpuArray[0] > cpuArray[1] && cpuArray[0] > cpuArray[2]) {
+            console.log(cpuArray[0])
+
+            } else if (cpuArray[1] > cpuArray[0] && cpuArray[1] > cpuArray[2]) {
+            console.log(cpuArray[1])
+
+            } else if (cpuArray[2] > cpuArray[1] && cpuArray[2] > cpuArray[0]) {
+            console.log(cpuArray[2])
+            }
+        }
+
+        getCpuRandomChoice();
+
+        console.log(cpuArray)
+
+        // Array random combined https://www.programiz.com/javascript/examples/get-random-item
+
+        let rock = "rock"
+        let paper = "paper"
+        let scissors = "scissors"
+
+        const cpuWepArray = [rock, paper, scissors]
+
+        function getCpuWep(arr) {
+        const randomIndex = Math.floor(Math.random() * arr.length);
+        const cpuChoice = arr[randomIndex];
+        return cpuChoice;
+        }
+
+        let cpuWep = getCpuWep(cpuWepArray)
+        
+        console.log(cpuWep)
+
+        
+
+
+        
+        
+
+        // console.log(cpuArray)
+        // console.log(cpuArray[0])
+        // console.log(cpuArray[1])
+        // console.log(cpuArray[2])
+        
+        // Pseudo-random
+        let randomNumber = Math.floor(Math.random()*3) + 1;
+        
+        console.log(randomNumber)
+
+
+
+        // console.log("Your lucky numbers:");
+
+
+        // for (const num of array) {
+        // console.log(num);
+        // }
+
+
+        
+    </script>
+</body>
+</html>
