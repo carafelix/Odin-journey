@@ -118,3 +118,18 @@ btn.addEventListener("click", () => {
 // prime example: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code#skipping_iterations_with_continue
 
 // do... while execute the code atleast onces
+
+// use of falsy values cleverly:
+
+let sum = 0;
+
+while (true) {
+
+  let value = +prompt("Enter a number", '');
+
+  if (!value) break; // (*)
+
+  sum += value;
+
+}
+alert( 'Sum: ' + sum );
