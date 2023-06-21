@@ -133,3 +133,24 @@ while (true) {
 
 }
 alert( 'Sum: ' + sum );
+
+
+// loop labes are holy grails for logic | https://javascript.info/while-for#labels-for-break-continue
+
+outer: for (let i = 0; i < 3; i++) {
+
+  for (let j = 0; j < 3; j++) {
+
+    let input = prompt(`Value at coords (${i},${j})`, '');
+
+    // if an empty string or canceled, then break out of both loops
+    if (!input) break outer; // (*)
+
+    // do something with the value...
+  }
+}
+
+alert('Done!');
+
+// The continue directive can also be used with a label. In this case, code execution jumps to the next iteration of the labeled loop.
+// https://javascript.info/task/which-value-while
