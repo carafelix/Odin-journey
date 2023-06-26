@@ -6,8 +6,17 @@ window.addEventListener(
 
 
 const keys = document.querySelectorAll('.key');
-const audio = document.querySelectorAll('audio')
+const audios = document.querySelectorAll('audio')
 
-keys.forEach((key) => {
+const audioKey = [];
+
+keys.forEach(key => {
     key.setAttribute('data-key', `Key${key.firstElementChild.innerText}`)
+    audioKey.push(key.firstElementChild.innerText)
 });
+
+audios.forEach(audio => {
+    audio
+});
+
+console.log(audioKey);
