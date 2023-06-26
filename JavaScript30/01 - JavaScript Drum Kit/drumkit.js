@@ -15,8 +15,13 @@ keys.forEach(key => {
     audioKey.push(key.firstElementChild.innerText)
 });
 
+function getIndex() {
+    return audioKey.shift()
+}
+
 audios.forEach(audio => {
-    audio
+    audio.setAttribute('data-key', `Key${getIndex()}`)
 });
+
 
 console.log(audioKey);
