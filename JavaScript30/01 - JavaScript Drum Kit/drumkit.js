@@ -10,7 +10,7 @@ const kbd = document.querySelectorAll('kbd')
 
 
 keys.forEach((key) => {
-    key.setAttribute('data-key', `Key${key.innerText}`)
+    key.setAttribute('data-key', `Key${key.firstElementChild.innerText}`)
 });
 
 function getKey(x) {
