@@ -1,3 +1,6 @@
 [submodule "css-exercises"]
 	path = css-exercises
 	url = git@github.com:carafelix/css-exercises.git
+[submodule "javascript-exercises"]
+	path = javascript-exercises
+	url = git@github.com:carafelix/javascript-exercises.git
