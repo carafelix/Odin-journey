@@ -13,3 +13,6 @@
 [submodule "rps-sansukumi-ken"]
 	path = rps-sansukumi-ken
 	url = git@github.com:carafelix/rps-sansukumi-ken.git
+[submodule "JavaScript30"]
+	path = JavaScript30
+	url = git@github.com:carafelix/JavaScript30.git
