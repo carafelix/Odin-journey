@@ -32,11 +32,18 @@ window.addEventListener('keydown', function(event) {    // easier to understand
     // each time you press a key it pass a function that queries the matching audio node with the same data-key attribute
      // based on the running function event.code (the key pressed)
      // and assign that to a local variable 
-    const sound = this.document.querySelector(`audio[data-key="${event.code}"]`) // 'this.' so powerful.
+    const sound = this.document.querySelector(`audio[data-key="${event.code}"]`); // 'this.' so powerful. 
+    const tecla = this.document.querySelector(`.key[data-key="${event.code}"]`); 
+
     if (!sound) {return};
-    // sound.play();    
+    // sound.currentTime = 0; // rewind 
+    // sound.play();     
     const newAudio = sound.cloneNode() 
     newAudio.play();
+    // tecla.classList.add('playing');
+    tecla.classList.toggle('playing'); 
+
+    console.log(tecla);                                
 
     console.log(sound);                                
 });
