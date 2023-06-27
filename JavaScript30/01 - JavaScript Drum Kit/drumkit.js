@@ -32,8 +32,11 @@ window.addEventListener('keydown', function(event) {    // easier to understand
     // each time you press a key it pass a function that queries the matching audio node with the same data-key attribute
      // based on the running function event.code (the key pressed)
      // and assign that to a local variable 
-    const sound = this.document.querySelector(`audio[data-key="${event.code}"]`) // 'this.' powerful. also audio[attribute]
-     
+    const sound = this.document.querySelector(`audio[data-key="${event.code}"]`) // 'this.' so powerful.
+    if (!sound) {return};
+    // sound.play();    
+    const newAudio = sound.cloneNode() 
+    newAudio.play();
 
     console.log(sound);                                
 });
