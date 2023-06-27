@@ -28,7 +28,7 @@ audios.forEach(audio => {
 
 // window event listener
 
-window.addEventListener('keydown', function(event) {    // easier to understand
+window.addEventListener('keydown', function(event) {    // easier to understand. Should wrap the function anywere else, not declaring it inside this function, too messy
     // each time you press a key it pass a function that queries the matching audio node with the same data-key attribute
      // based on the running function event.code (the key pressed)
      // and assign that to a local variable 
@@ -38,16 +38,25 @@ window.addEventListener('keydown', function(event) {    // easier to understand
     if (!sound) {return};
     // sound.currentTime = 0; // rewind 
     // sound.play();     
-    const newAudio = sound.cloneNode() 
+    const newAudio = sound.cloneNode();
+    tecla.classList.add('playing');
     newAudio.play();
-    // tecla.classList.add('playing');
-    tecla.classList.toggle('playing'); 
+    // tecla.classList.toggle('playing'); 
 
-    console.log(tecla);                                
+    // console.log(tecla);                                
 
-    console.log(sound);                                
+    // console.log(sound);                                
 });
 
+function removeTransition(event) {
+    if(event.propertyName !== 'transform') {
+        return
+    }
+    this.classList.remove('playing')
+}
+
+keys.forEach(key => key.addEventListener('transitionend', removeTransition) )  //transitionend is a eventType, when that fires, the other parameter functions fires
+                                                        // is not removeTransition()!!!! its just removeTransition
 
 
 // callback function
