@@ -16,3 +16,6 @@
 [submodule "JavaScript30"]
 	path = JavaScript30
 	url = git@github.com:carafelix/JavaScript30.git
+[submodule "paintesque"]
+	path = paintesque
+	url = git@github.com:carafelix/paintesque.git
