@@ -19,3 +19,6 @@
 [submodule "paintesque"]
 	path = paintesque
 	url = git@github.com:carafelix/paintesque.git
+[submodule "calculator"]
+	path = calculator
+	url = git@github.com:carafelix/calculator.git
