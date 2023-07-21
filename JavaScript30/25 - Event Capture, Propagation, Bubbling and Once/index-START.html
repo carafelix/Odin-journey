@@ -44,17 +44,6 @@
 <button></button>
 <script>
 
-  const divs = document.querySelectorAll('div');
-
-  function logTxt(event){     // if it is anonymous it runs the 3 events
-    console.log(this.classList.value);
-    event.stopPropagation();      
-  }
-
-  divs.forEach(div => div.addEventListener('click', logTxt, {
-        capture: false,                   // options paramenter/arguments! they set up like so {optionB: x, optionA: x}
-        once: true // its like adding removeEventListener after its fire once
-  } )) 
 </script>
 </body>
 </html>
