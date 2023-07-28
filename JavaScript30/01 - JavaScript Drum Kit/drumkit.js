@@ -18,7 +18,7 @@ function getIndex() {
 }
 
 keys.forEach(key => {
-    key.setAttribute('data-key', `Key${key.firstElementChild.innerText}`) 
+    key.setAttribute('data-key', `Key${key.firstElementChild.innerText}`) // Late comment, you could make functions like this to add attributes to something automatically
     audioKey.push(key.firstElementChild.innerText)  // set up array with all letters
 });
 
