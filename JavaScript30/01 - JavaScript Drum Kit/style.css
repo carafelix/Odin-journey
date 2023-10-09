@@ -49,3 +49,36 @@ kbd {
   letter-spacing: .1rem;
   color: #ffc600;
 }
+
+iframe{
+  border-radius: 50px;
+  position: absolute;
+  min-width: 500px;
+  height: 500px;
+  zoom: 0.6;
+  -moz-transform: scale(0.6);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.6);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.6);
+  -webkit-transform-origin: 0 0;
+}
+
+#one{
+  top: 200px;
+  left: 200px;
+}
+#two{
+  top: 200px;
+  left: 600px;
+  min-width: 1000px;
+  height: 1000px;
+  zoom: 0.4;
+  -moz-transform: scale(0.4);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.4);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.4);
+  -webkit-transform-origin: 0 0;
+}
+

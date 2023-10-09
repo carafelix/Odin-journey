@@ -22,3 +22,9 @@
 [submodule "calculator"]
 	path = calculator
 	url = git@github.com:carafelix/calculator.git
+[submodule "admin-dashboard"]
+	path = admin-dashboard
+	url = git@github.com:carafelix/admin-dashboard.git
+[submodule "sign-up-form"]
+	path = sign-up-form
+	url = git@github.com:carafelix/sign-up-form.git
